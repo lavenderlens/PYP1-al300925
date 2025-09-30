@@ -1,0 +1,43 @@
+0900 START
+
+1030 BREAK AM
+
+1200 LUNCH TILL 1300
+
+1430 BREAK PM
+
+1600 OPTIONAL Q&A 
+
+1630 FORMAL FINISH
+
++353 85 105 2618 (Whatsapp)
++44 7442 173078 (UK)
+
+alanl@stayahead.com
+Cc
+alan@alanlavender.com
+
+01-02 scripts / syntax
+
+03 variables and datatypes
+
+04 operators
+
+05 conditions and loops
+
+06 functions
+
+07 objects
+
+08-12 containers
+
+13 modules 
+
+14 pattern matching 
+
+15 exception handling 
+
+16 files 
+
+17 databases 
+
