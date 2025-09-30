@@ -17,3 +17,16 @@
 # Flight time             1 hour 15 minutes
 
 # 3. Print each variable and its data type to the console.
+
+id = 1234
+first_name = "John"
+last_name = "Doe"
+checked_bags = False
+visited_countries = ["Latvia", "Guyana", "Yemen", "Uzbekistan"]
+visited_countries.append("USA")
+flight = {"DEP":"LGW", "ARR": "CDG"}
+flight_rtn = {"DEP":"CDG", "ARR": "LGW"}
+flight_time_in_mins = 75
+flight_time_in_hours = 1.25
+flight_time_in_hours_and_mins = {"hours": 1, "mins": 15}
+
