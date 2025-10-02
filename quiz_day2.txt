@@ -1,0 +1,27 @@
+Day 2 Quiz
+----------
+
+1. What is a for loop best suited to do?
+
+2. What is a while loop best suited for?
+
+3. When will an optional else clause after a loop run? (any loop, for or while)
+
+4. In a function definition, what syntax denotes the block of code that is the body of the function?
+
+5. What is the keyword required to exit from this loop:
+
+while True:
+    # some code
+
+6. Differentiate between a module and a script, in broad terms only.
+
+7. If a function has a return statement, can any code come after that line (in the same block)?
+
+8. If a function has input, what is this called at function definition time?
+
+9. If a function has input, what is this called at runtime?
+
+10. What, if anything, do we know in Python from a function definition, 
+about the datatypes of the parameters to a function 
+(without any custom validation code)?
