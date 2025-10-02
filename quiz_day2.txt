@@ -2,26 +2,67 @@ Day 2 Quiz
 ----------
 
 1. What is a for loop best suited to do?
+iterating over containers when the length prop is known (so no. of iterations are)
 
 2. What is a while loop best suited for?
+when we don't know the no. of iiterations in advance
+NOTE: there are no for loops at runtime, only while loops
 
 3. When will an optional else clause after a loop run? (any loop, for or while)
+when the loop has completed naturally (no break encountered)
+best practice: comment else with # no break
 
 4. In a function definition, what syntax denotes the block of code that is the body of the function?
+
+def my_func():
+    #indent
 
 5. What is the keyword required to exit from this loop:
 
 while True:
     # some code
+    break
+
+OR, if I want to put an else on the end, we would have to do something like this:
+
+more = True
+while more:
+    #some code
+    if something:
+        break
+    else:
+        more = False
+        #something else
+else:
+    #loop completed without triggering the break
+
 
 6. Differentiate between a module and a script, in broad terms only.
+a module contains ONLY functions (and classes)
+we import modules and the functions in them into a script or multiple scripts at runtime
+facilitates code re-use and separation of concerns
+facilitates more declaratively-styled runtime
+the script knows WHAT to do
+the module knows HOW to do it
 
 7. If a function has a return statement, can any code come after that line (in the same block)?
+no - the function exits when it encounters a returnyou can have multpile return sttatements in a function
+but each one represents the end of that path through the code
+
+def my_func(my_list):
+    if my_list[0]:
+        return my_list[0]
+    else:
+        return None
 
 8. If a function has input, what is this called at function definition time?
+parameters 
 
 9. If a function has input, what is this called at runtime?
+arguments *real data*
 
 10. What, if anything, do we know in Python from a function definition, 
 about the datatypes of the parameters to a function 
 (without any custom validation code)?
+nothing
+you don't know what's in them
