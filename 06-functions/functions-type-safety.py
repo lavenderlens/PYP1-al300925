@@ -8,7 +8,7 @@ if we wish to validate parameters
 we need to invoke the builtin type() function in our own function body
 '''
 
-def string_processor(a_string) -> str:
+def string_processor(a_string: str) -> str:
     """_summary_
 
     Args:

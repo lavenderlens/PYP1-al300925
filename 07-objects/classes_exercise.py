@@ -35,3 +35,30 @@
 # 7. Use the addDelegate method to assign some names to the Training Course
 # object’s delegates list.
 # 8. Display to the console the total revenue generated for the TrainingCourse object.
+
+
+
+class TrainingCourse:
+    def __init__(self, title, duration, price_per_person):
+        self.title = title
+        self.duration = duration
+        self.price_per_person = price_per_person
+        self.delegates = []
+    def add_delegate(self, name):
+        self.delegates.append(name)
+    def get_total_revenue(self):
+        return self.price_per_person *len(self.delegates)
+    def __str__(self):
+            return f"""
+Course Title: {self.title}
+Duration (days): {self.duration}
+Price Per Person: {self.price_per_person}
+Delegates booked: {self.delegates}"""
+
+python_1 = TrainingCourse("Python Programming 1", 4, 1600.00)
+python_1.add_delegate("Suki")
+python_1.add_delegate("Graham")
+
+print(total_revenue := f"£{python_1.get_total_revenue()}")
+print(python_1.__str__())
+print(python_1)
