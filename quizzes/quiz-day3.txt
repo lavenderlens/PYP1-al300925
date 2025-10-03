@@ -1,0 +1,87 @@
+Day 3 Quiz
+
+----------
+  
+1. How does one access the attributes and methods of an object?
+my_obj = MyClass()
+if MyClass had a name prop, how would we call it on its instance, drilling down?
+my_obj.name (dot notation)
+ 
+2. Class names should be in what style?
+CamelCase / PascalCase 
+ 
+3. Which dunder (D-ouble UNDER-score) method is called (indirectly) when you FIRST create an object of a class?
+def __init__
+ 
+4. The first param. of each method in a class is conventionally named self. 
+To what does this param. refer?
+the current instance of the class under construction / being made
+ 
+5. How many objects are created in the following 2 LOC?
+
+class_a = ClassA() 
+class_b = class_a
+
+ONE, the first line
+second line copies the reference only: both refs point to the same object
+ 
+6. Which dunder method should we override in our own custom classes 
+to obtain a meaningful representation of our objects' properties? 
+
+__str__
+
+NOTE: the __repr__ method is VERY similar but designed as a technical method for what we need to reconstruct/decompile the class
+
+7. How many lists are created in the following 2 LOC, using *list comprehension*?
+
+nums = [1,2,3,4,5,6,7,8,9]
+small_nums = [num for num in nums if num < 5] 
+
+TWO a new list is created from the first one. The clue is in TWO sets of brackets. 
+
+8. What will the following *list slice* return?
+
+nums = [1,2,3,4,5,6,7,8,9]
+print(nums[1::2])
+[2,4,6,8]
+
+9. Which function is pure, a or b?
+
+thing = 1
+
+def a():
+
+    print(thing)
+ 
+def b(thing):
+
+    print(thing)
+
+b - a COPY of global Thing is passed in
+ 
+10. Which of the two functions below has a closure, outer_a or outer_b? 
+Note that both functions compile and run, and both return an inner function called add_to_lst.
+Don't be surprised if you can't see the answer at first. 
+This question involves reasoning about the code.
+
+def outer_a():
+
+    lst = []                #clue one: the indent
+
+    def add_to_lst(item):
+        nonlocal lst        #clue 2 : nonlocal keyword
+        lst.append(item)
+        return lst        
+    return add_to_lst
+ 
+lst = []
+
+def outer_b():
+
+    def add_to_lst(item):
+        global lst
+        lst.append(item)
+        return lst
+    return add_to_lst
+
+a because the lst is a local (lexical) variable
